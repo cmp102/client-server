@@ -1,4 +1,4 @@
-all: target cpscripts target/send-file target/save-to-disk
+all: target cpexamples target/server
 
 target:
 	mkdir target
@@ -8,7 +8,7 @@ target/server: server.go
 	go build -o target/server server.go
 
 cpexamples: examples/*
-	cp examples/* target/
+	cp -r examples/* target/
 
 clean:
 	rm -rf target
