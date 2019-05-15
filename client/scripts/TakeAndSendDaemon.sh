@@ -7,7 +7,7 @@ do
     do
         echo
         echo Sending $f...
-        ./send-file data/$f $(date '+%s')-$f asdf https://localhost/post 8080
+        ./send-file data/$f $(date '+%s')-$f $1 $2 $3
     done
     rm -rf data/*
     sleep 300
