@@ -1,0 +1,7 @@
+crt: keys/server.crt
+key: keys/server.key
+port: 8080
+storage: data
+authtokens: auth.yml
+user: admin
+password: 1235
